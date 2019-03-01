@@ -1,16 +1,19 @@
 <template>
   <div id="app">
   	<Header/>
+  	<Footer/>
   </div>
 </template>
 
 <script>
-import Header from'./components/Header'
+import Header from'./components/layout/Header'
+import Footer from'./components/layout/Footer'
 
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    Footer
   }
 }
 </script>
@@ -18,6 +21,9 @@ export default {
 <style>
 	*{margin: 0;padding: 0;box-sizing: border-box;}
 	html,body{font-family:"Helvetica Neue", NotoSansHans-Regular,AvenirNext-Regular,arial,Hiragino Sans GB,"Microsoft Yahei","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif;}
+	a{text-decoration: none;color: #000;}
+	ul,li{list-style: none;}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
