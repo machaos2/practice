@@ -21,6 +21,10 @@
 			</div>
 		</div>
 		
+		<div class="navRight">
+			
+		</div>
+		
 	</div>
 </template>
 
@@ -64,7 +68,7 @@
 </script>
 
 <style scoped lang="scss">
-	.header{border-top:4px solid #4fc08d;height:auto;height:54px;box-shadow: 0 0 10px 0 rgba(42,42,42,0.1);
+	.header{border-top:4px solid #4fc08d;height:auto;height:54px;box-shadow: 0 0 10px 0 rgba(42,42,42,0.1);background: #fff;
 		.navs{height:50px;font-size:14px;
 			.topleft{float: left;display: flex;height: 100%;align-items: center;cursor: pointer;
 				img{width: 26px;height: 26px;margin-right: 10px;}
