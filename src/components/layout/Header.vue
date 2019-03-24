@@ -8,7 +8,7 @@
 					<i></i>
 				</div>
 				<div class="topmenu" v-show="dd === true">
-					<a href="#" v-for="title in titles"><img :src="title.src"/>{{title.name}}</a>
+					<a href="/" v-for="title in titles"><img :src="title.src"/>{{title.name}}</a>
 				</div>
 			</div>
 			
@@ -19,18 +19,24 @@
 					</li>
 				</ul>
 			</div>
+			
+			<div class="navRight">
+				<Entry/>
+			</div>
 		</div>
 		
-		<div class="navRight">
-			
-		</div>
+		
 		
 	</div>
 </template>
 
 <script>
+	import Entry from'@/components/layout/Entry'
 	export default{
 		name:'Header',
+		components:{
+			Entry
+		},
 		data(){
 			return{
 				dd:false,
@@ -83,7 +89,7 @@
 					}
 				}
 			}
-			.topList{
+			.topList{float: left;
 				ul{float:left;height: 50px;margin-left: 10px;
 					li{float: left;
 						a{padding: 15px 15px 9px;display: block;height: 50px;}
@@ -91,6 +97,7 @@
 					}
 				}
 			}
+			.navRight{float: right;}
 		}
 		
 	}

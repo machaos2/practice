@@ -1,14 +1,17 @@
 <template>
   <div id="app">
   	<Header/>
+  	<div class="container">
+  		<router-view/>
+  	</div>
   	<Footer/>
   	<vue-canvas-nest :config="{color:'0,50,90', count: 88, opacity:0.8 ,pointColor: '255, 155, 0', zIndex: -1}"></vue-canvas-nest>
   </div>
 </template>
 
 <script>
-import Header from'./components/layout/Header'
-import Footer from'./components/layout/Footer'
+import Header from'@/components/layout/Header'
+import Footer from'@/components/layout/Footer'
 
 import vueCanvasNest from 'vue-canvas-nest'
 
@@ -27,6 +30,9 @@ export default {
 </script>
 
 <style lang="scss">
+	$fa-font-path: "~font-awesome/fonts/";
+	@import "~font-awesome/scss/font-awesome";
+	
 	*{margin: 0;padding: 0;box-sizing: border-box;}
 	html,body{height: 100%;font-family:"Helvetica Neue", NotoSansHans-Regular,AvenirNext-Regular,arial,Hiragino Sans GB,"Microsoft Yahei","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif;}
 	a{text-decoration: none;color: #000;}
