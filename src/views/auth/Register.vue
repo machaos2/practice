@@ -1,5 +1,5 @@
 <template>
-  <div class="row">
+  <div class="row register">
     <div class="col-md-4 col-md-offset-4 floating-box">
       <div class="panel panel-default">
         <div class="panel-heading">
@@ -23,7 +23,7 @@
             <label class="control-label">图片验证码</label>
             <input type="text" class="form-control" placeholder="请填写验证码">
           </div>
-            <div class="thumbnail" title="点击图片重新获取验证码">
+          <div class="thumbnail" title="点击图片重新获取验证码">
               <div class="captcha"></div>
           </div>
           <button type="submit" class="btn btn-lg btn-success btn-block">
@@ -39,9 +39,16 @@
 export default {
   name: 'Register'
 }
+
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+
+
+
+
 .thumbnail { width: 170px; margin-top: 10px; cursor: pointer;}
 .thumbnail .captcha { height: 46px; background: #E1E6E8;}
+
+
 </style>

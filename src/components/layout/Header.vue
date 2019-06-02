@@ -82,7 +82,7 @@
 				.arrowdown{margin-left: 15px;
 					i{display: inline-block;width: 0; height: 0;border-left: 5px solid transparent;border-right: 5px solid transparent;border-top: 6px solid #666;}
 				}
-				.topmenu{position: absolute;top: 56px;box-shadow: 0 2px 3px 0 rgba(34,36,38,.15);font-size: 14px;text-align: left;margin-top: 2px;
+				.topmenu{position: absolute;top: 56px;box-shadow: 0 2px 3px 0 rgba(34,36,38,.15);font-size: 14px;text-align: left;margin-top: 2px;background: #fff;
 					>a{align-items: center;padding:10px 16px;padding-right: calc(1.14285714rem + 17px);display: block;height: 100%;line-height: 24px;color: #777;
 						img{width: 20px;height: 20px;margin-right: 10px;margin-bottom: -5px;}
 						&:hover{background: #eee;}
